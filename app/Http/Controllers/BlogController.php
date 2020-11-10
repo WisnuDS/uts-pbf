@@ -26,7 +26,8 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('create');
+        $content = [];
+        return view('create', compact('content'));
     }
 
     /**

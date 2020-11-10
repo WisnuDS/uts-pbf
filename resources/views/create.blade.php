@@ -4,7 +4,7 @@
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                @if(url()->current() === route('blog.edit',[$content["id"]]))
+                @if(!empty($content))
                     <form method="POST" action="{{route('blog.update',[$content["id"]])}}">
                         @method('put')
                         @csrf
