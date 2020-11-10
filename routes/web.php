@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/blog');
+Route::redirect('/', '/182410103009/uts-pbf/public/blog');
 //Route::get('/','App\Http\Controllers\BlogController@index');
 //Route::get('/create','App\Http\Controllers\BlogController@create');
 Route::resource('/blog','App\Http\Controllers\BlogController');
